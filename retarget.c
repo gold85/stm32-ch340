@@ -23,9 +23,9 @@
 
 int SER_PutChar (int c)
 {
-    while(!(USART1->SR & USART_SR_TC)) { }
+//    while(!(USART1->SR & USART_SR_TC)) { }
 
-    USART1->DR = (uint8_t) c;
+//    USART1->DR = (uint8_t) c;
 
     return c;
 }
